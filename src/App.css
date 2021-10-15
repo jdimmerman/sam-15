@@ -1,0 +1,76 @@
+.app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ceiling, .floor {
+  height: 25%;
+  display: flex;
+}
+.floor {
+  align-items: flex-end;
+}
+.ceiling .piece, .floor .piece {
+  background-color: red;
+}
+
+.center {
+  flex: 1;
+  position: relative;
+}
+
+.me {
+  position: absolute;
+  background-color: blue;
+}
+
+.asteroid {
+  background-color: black;
+  position: absolute;
+}
+
+.you-died, .next-clue {
+  position: absolute;
+  top: 10%;
+  height: 200px;
+  width: 200px;
+  left: calc(50% - 105px);
+  box-shadow: 0 3px 10px rgb(0 0 0);
+  background-color: grey;
+  z-index: 10;
+  padding: 10px;
+  text-align: center;
+}
+.next-clue {
+  bottom: 10%;
+  top: unset;
+  background-color: #ccff15;
+  box-shadow: 0 3px 10px gold;
+  transition: opacity 1000ms ease-in;
+}
+
+.clock {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 20px);
+  width: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-top: 10px;
+}
