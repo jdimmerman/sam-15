@@ -7,7 +7,7 @@ const ME_DIFF = 3;
 const TICK_RATE = 30;
 const INITIAL_MOVEMENT_RATE = 2;
 const TICK_DIV_TO_TIME = 20;
-const SUCCESS_TIME = 3;
+const SUCCESS_TIME = 30;
 
 const getNextDiff = (lastDiff) => {
   if (lastDiff > 60) { 
